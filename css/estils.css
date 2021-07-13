@@ -1,0 +1,182 @@
+.contenedor1 {
+   display: flex;   
+   background-color: black;
+   flex-direction: column;
+   padding: 20px;
+   
+ }
+ 
+ .contenedor1 > div {
+   
+   height: 100px;
+   margin: 10px;  
+  
+ }
+
+ .hijo1_1{
+
+    background-color: blue;
+    display: flex;
+    align-items: center;
+ }
+
+ .hijo1_1 > div {
+   height: 20px;
+   margin: 20px;
+   background-color: red;  
+   
+ }
+ 
+ .h1_1_1 {
+   width: 20vw;
+ }
+
+ .h1_1_2 {
+   width: 60vw;
+ }
+ .h1_1_3 {
+   width: 20vw;
+ }
+ 
+ .hijo1_2{
+   background-color: orange;
+   display: flex;
+   align-items: center;
+}
+
+.hijo1_2 > div {
+   height: 20px;
+   margin: 20px;
+   background-color: rgb(240, 221, 180);  
+   width: 100vw;
+ }
+
+ .contenedor2 {
+   display: flex;   
+   background-color: black;
+   flex-direction: row;
+   padding: 20px;   
+   margin-top: 40px;
+   justify-content: stretch;
+   
+ }
+
+ .contenedor2 > div {
+  
+   
+   margin: 10px;  
+  
+ }
+
+ .hijo2_1{
+   background-color: blue;
+   display: flex;
+   flex-wrap: wrap;
+   
+   width: 60vw;
+   justify-content: space-between;
+}
+
+
+.hijo2_1 > div {
+   height: 20px;
+   margin: 20px;
+   background-color: rgb(0, 132, 255);
+   /*width: 100vw;*/
+   
+ }
+
+.h2_1_1{
+   width: 43%;
+}
+.h2_1_5{
+   width: 100%;
+}
+
+.hijo2_2{
+   background-color: rgb(255, 81, 0);
+   display: flex;      
+   width: 40vw;
+   flex-wrap: wrap;
+   align-content: baseline;
+}
+.hijo2_2 > div {
+   height: 20px;
+   margin: 20px;
+   background-color: rgb(255, 238, 0);
+   /*width: 100vw;*/
+   
+ }
+.h2_2_1{
+   width: 40vw;
+}
+
+.contenedor3 {
+   display: flex;   
+   background-color: black;
+   flex-direction: row;
+   padding: 20px;   
+   margin-top: 40px;
+   justify-content: stretch;
+   
+ }
+ .contenedor3 > div {
+ 
+  
+   margin: 10px;  
+  
+ }
+
+ .hijo3_1{
+   background-color: rgb(255, 196, 0);
+   display: flex;   
+   width: 100vw;
+   justify-content: space-between;
+}
+
+@media (max-width: 1115px){
+
+   .contenedor2 {
+      flex-direction: column;
+      background-color: yellow;
+     
+   }  
+   
+
+   .hijo2_1{
+      width: 97%;
+      
+   }
+
+   .hijo2_2{
+      width: 97%;
+      
+   }
+
+   .h2_2_1 {
+      width: 100vw;
+  }
+}
+
+@media (max-width: 700px){
+
+   .hijo1_1{
+      flex-direction: column;
+      align-items:flex-start;
+   }
+   .hijo1_1 > div {      
+      margin: 5px;
+   }
+   .h1_1_1 {
+      width: 83vw;
+  }
+  .h1_1_2 {
+   width: 83vw;
+   }
+   .h1_1_3 {
+      width: 83vw;
+  }
+  .h2_1_1{
+     width: 100% ;
+  }
+}
